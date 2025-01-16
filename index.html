@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolico</title>
-    <link rel="stylesheet" href="frontend/style.css">
+    <title>Portfolico</title> <!-- Title for the document -->
+    <link rel="stylesheet" href="frontend/style.css"> <!-- linking the style sheet -->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    </style>
-    <script src="frontend/index.js"></script>
+    </style> <!-- importing fonts -->
+    <script src="frontend/index.js"></script> <!-- linking the javascript files -->
 </head>
 <body>
     <header>
         <section id="title">
-            <h1>Portfolico</h1>
-            <nav>
+            <h1>Portfolico</h1> <!-- logo/company name -->
+            <nav> <!-- nav bar on header -->
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="frontend/about.html">About Us</a></li>
                     <li><a href="frontend/contact.html">Contact Us</a></li>
                 </ul>
             </nav>
-            <button id="button1" onclick="openLogin()">LOGIN</button>
-            <button id="button2" onclick="openMenu()">MENU</button>
+            <button id="button1" onclick="openLogin()">LOGIN</button> <!-- button for login -->
+            <button id="button2" onclick="openMenu()">MENU</button> <!-- button for menu (only in phone screen) -->
         </section>
     </header>
     
     <main>
-        <section id="intro" class="animate">
+        <section id="intro" class="animate"> 
             <h2>Showcase your personal projects with a portfolio website that stands out</h2>
         </section>
 
@@ -39,7 +39,7 @@
             </div>
         </section>
 
-        <section id="build" class="animate">
+        <section id="build" class="animate"> <!-- 3 steps display section -->
             <h3>Build your online portfolio with full creative freedom in just 3 easy steps</h3>
             <section id="steps">
                 <div>
@@ -62,7 +62,7 @@
             </section>
         </section>
 
-        <section id="templateSlide" class="animate">
+        <section id="templateSlide" class="animate"> <!-- autoplay infinite slider -->
             <h3>Various templates to choose from</h3>
             <section id="templates">
                 <section id="slider">
@@ -144,7 +144,7 @@
             </section>
         </section>
 
-        <section id="importance" class="animate">
+        <section id="importance" class="animate"> 
                 <h3>Why a portfolio is important for your career</h3>
                 <div id="written">
                     <p>Unlike the static black and white of a traditional resume, an online portfolio brings your work to life. In full color, it makes engaging with your creative output an active and immediate experience.</p>
@@ -155,7 +155,7 @@
         <section id="startNow">
         <h3>Show the world what you do best</h3>
         <h4>Create your online portfolio today with Portfolico</h4>
-        <button onclick="openSignup()">START NOW</button>
+        <button onclick="openSignup()">START NOW</button> <!-- button that leads to  sign up form -->
         </section>
     </main>
 
@@ -163,7 +163,7 @@
         &copy; Portfolico 2025 <br> Aisha Siddiqah
     </footer>
 
-    <section id="popupSignup">
+    <section id="popupSignup"> <!-- making the signup form --> 
         <section class="signupForm">
             <button onclick="closeSignup()" id="closeBtn">X</button>
             <h2 class="heading">SIGN UP</h2>
@@ -196,7 +196,7 @@
         </section>
     </section>
 
-    <section id="popupLogin">
+    <section id="popupLogin"> <!-- making the login form -->
         <section class="loginForm">
             <button onclick="closeLogin()" id="closeBtn">X</button>
             <h2 class="heading">LOGIN</h2>
@@ -219,7 +219,7 @@
         </section>
     </section>
 
-    <section id="popupMenu">
+    <section id="popupMenu"> <!-- making the menu section with the nav links for phone screen -->
         <section class="menuForm">
             <button onclick="closeMenu()" id="closeBtn">X</button>
             <h2 class="heading">MENU</h2>
@@ -229,11 +229,11 @@
             </section>
 
             <section class="field">
-                <p><a href="about.html">About Us</a></p>
+                <p><a href="/frontend/about.html">About Us</a></p>
             </section>
 
             <section class="field">
-                <p><a href="contact.html">Contact Us</a></p>
+                <p><a href="/frontend/contact.html">Contact Us</a></p>
             </section>
             
             <section>
@@ -245,8 +245,8 @@
             </section>
         </section>
     </section>
-
-    <script>
+    <!-- Javascript for the forms -->
+    <script> 
         document.getElementById('signupBtn').addEventListener('click', async () => {
   const name = document.getElementById('nameSignup').value.trim();
   const email = document.getElementById('emailSignup').value.trim();
